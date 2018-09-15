@@ -6,12 +6,20 @@ Author: Samuel Dalusung
 
 /* GENERAL STYLES
 ================================================== */
+.feture{
+    padding-top: 23px;
+}
+
 
 html {
     height:100%
 }
 
 body {
+    background-image: url(../images/sunset.jpg);
+    background-position: center center;
+   background-repeat: no-repeat;
+   background-size: cover;
     font:15px/23px 'Raleway',sans-serif;
     margin:0;
     padding:0;
@@ -37,7 +45,7 @@ ul li {
 
 .pattern {
     background-image:url(../images/pattern.png);
-    background-repeat: repeat;
+    background-repeat: round;
     background-attachment:scroll;
     width:100%;
     height:100%;
@@ -242,12 +250,6 @@ a.about-section-btn {
 
 /* MEDIA QUERIES
 ================================================== */
-@media screen and (max-width: 1200px) {
-.pattern {
-    background: none;
-}
-}
-
 
 @media screen and (max-width: 768px) {
 .about-section-title {
@@ -257,7 +259,7 @@ a.about-section-btn {
 
 @media screen and (max-width: 480px) {
 .big-background-title {
-    font-size:58px
+    font-size:71px;
 }
 
 .small-background-title {
@@ -278,5 +280,93 @@ a.about-section-btn {
     font-size:30px
 }
 }
+footer {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    background: #222;
+    border-top: 2px solid #444;
+}
+#footerRights {
+    background-color: #333;
+    color: #999;
+    border-top: 1px solid #1b1b1b;
+}
+footer a:hover{
+    color: #fff;
+	}
+footer a{
+    color: #ccc;
+    font-size: 12px;
+}
+footer p{
+    color: #ccc;
+    font-size: 12px;
+}
+#emailinput{
+    width: 93%;
+    padding: 4px;
+    text-align: center;
+    color: #ccc;
+}
+#emailinput::-webkit-input-placeholder {
+   color: #777;
+}
+#subsinput{
+    float: left;
+    width: 60%;
+    height: 48px;
+    margin-left: 18px;
+    text-align: center;
+}
+#subsbtn{
+    width: 36%;
+    height: 47px;
+}
 
-
+#subsinput::-webkit-input-placeholder {
+   color: #777;
+}
+#mainFooter{
+    text-align: left;
+    height: 400px;
+}
+#mainFooter .container{
+    padding-top:100px;
+}
+#mainFooter h3{
+    margin-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+    #mainFooter{
+        text-align: center;
+        height: auto;
+    }
+    #mainFooter .container{
+    padding-top:0px;
+    }
+}
+.xmass{
+    position: fixed;
+    width: 68px;
+    padding-left: 9px;
+    top: 64px;
+}
+@media screen and (max-width: 768px) {
+    .xmass{
+    position: fixed;
+    width: 65px;
+    padding-left: 0px;
+    top: 54px;
+}
+}
+#features{
+        background: linear-gradient(to top, #eee, rgba(255, 255, 255, 0.89),white);
+}
+.fits{
+    font-size: 43px;margin-bottom: 0px;
+    color: #fff;margin-top: 65px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
